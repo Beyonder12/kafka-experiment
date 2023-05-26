@@ -21,7 +21,10 @@ public class Main {
 //        JSONObject jsonObject = new JSONObject(mp);
 //        System.out.println(jsonObject);
 
-        ProducerKafka.sendData("mytopic", "mykey", "fajri");
+        //Recreating topic
+//        KafkaConfig.recreateTopic("mytopic");
+
+//        ProducerKafka.sendData("mytopic", "mykey", "amn");
         ConsumerKafka.consume("mytopic");
 
     }
